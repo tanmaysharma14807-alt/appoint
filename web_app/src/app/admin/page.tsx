@@ -67,7 +67,7 @@ export default function AdminDashboard() {
       phone: newBooking.phone,
       services: [newBooking.service],
       stylist: newBooking.stylist,
-      stylistImg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB4vbX8zYEAHdHE6W9nUPNkJLZrSF1bNWx1Us_aIz4tfRw-oMzP4YZK0XMcHhdKSPQHfyU39I0ekZJemIcbzXHYOli_5vtLqKe_eU8kDuS8AQpjvRh_VdjihauDCy7PCS9Fsk1QVLc-dx3pds678Cwh6gH7YhPIElWw4Z-VW__4iJL7Jno2ihrFwQkjoPerjVFJBOZwKV_hpR8O3YBdYc2-GQulVzgAXxneqLp6CDUZfnQGyC1d5J5rjdaq-JjtVrYwat0QAKjeRZg', // placeholder admin generic img
+      stylistImg: 'https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&q=80&w=400', // placeholder admin generic img
       date: newBooking.date,
       time: newBooking.time
     };

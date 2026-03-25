@@ -11,7 +11,7 @@ const SERVICES = [
     price: 95,
     duration: '60 Minutes',
     desc: 'Structural precision meets fluid movement. Includes luxury wash and style.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDx9TiA2tB2Nj-RfLIjCz7J01GRNREyvZuBn6e-WcnLGX0j9jZ2eWRdZa-XfePdbwBYsU6zb_UAVLgjXTqU2k-YDzPl4iTs8dVc5FO_S4yndA6YcE7fP4kKavUUL2yW0XPJ9pHmSZ7m3-UcHboN-_GCb3EQf8LHPeDx3iHtAIIKjlF-jxtyUsk_c-BVCKcgDYOkxqyr5BV6x2FUyWLoTNB_FNUDN_onmR3vkBhsLcy2q9wwb5Mwhx4YdeZe5WjvCsiuBZwRe9CcYOs'
+    img: 'https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'hair-color',
@@ -19,7 +19,7 @@ const SERVICES = [
     price: 180,
     duration: '120 Minutes',
     desc: 'Bespoke coloring service tailored to your skin tone and hair texture.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBJX1zUHu3z8O7cSvAIXHkxlE2SFAt8Ei95ox-a_iwrIQ8Vnu5954WuaZcVCvLTUzzu-5WWmQIU29_6T_Hg2fsUBK1sbP4Lsi5OU_oiDsf7M9HkoCzNRFzJWpqVbI4IgH90VBNek7GPqAqWgkUkUphQVXGI7ayXmAH4L-PjWS8Be8UgmyDHnTLRchH7Jj7vUDn3tm0MlcHcof_o8kZeHbrDVNSX7b54e4qiL7qMOH3Ls3eh57NV8oLb2hbf8DMW4Gt5XTPl0-xaQ9w'
+    img: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'beard-trim',
@@ -27,7 +27,7 @@ const SERVICES = [
     price: 45,
     duration: '30 Minutes',
     desc: 'Precision grooming and hot towel treatment for a refined look.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBnwQs83ZDK6f6SaRhTbVXxK9Ug6YpkQo8eGcCD_tJxJjudFUNzLl2yVeBrNuf0U1FZHIkNqgnp6v0WpUYb75oEcZJIrfIXuAdYsG-CuIfVmEhSr8LZnyUMti8LYf85SHYSn29eQLl3iCONDg0DFLJ2eW3yMWWjNvEs4X5isxsAXHDESwYV4ixdb18h3UGofApMso4EKorWn7freOFe1gzIojpe0hqEAUpwXKev4Vt8R9SJwxk6le7jdiRvaLbf9QyqgCJtcOf3KRc'
+    img: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'straightening',
@@ -35,7 +35,7 @@ const SERVICES = [
     price: 250,
     duration: '180 Minutes',
     desc: 'Long-lasting silkiness and frizz control with premium keratin treatment.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCMUvrBIUtCbrqhrL1582apAkp-pUWig94bwGEhmPvRxRVvq3F62-f_sJTaeO5HKBOxtWl2zgBOsLE92abo3lfliOuVPg7ffAXJI4C1O4Rq9XknTySJ_jKTH-GBoBPlKqifgbuB49BMeKqxF8LowBlKwv3YsmAW7iEFJOeLpCibyvLuikrqKytumZT8MqpGbiEcbxPANaDm-wzYwry5s9b6plF__QEHu3x-3YIj2zEtrPaQggkSO4l8eX4WR9Pe3Bq3z02_pzmj6yA'
+    img: 'https://images.unsplash.com/photo-1521590832167-7bfc17474920?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'perm',
@@ -43,7 +43,7 @@ const SERVICES = [
     price: 150,
     duration: '150 Minutes',
     desc: 'Modern texture and volume tailored to your desired curl pattern.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuChP_nPvgXG2NWZZ18fzqhhgkDa93X19qrStpMNHFcHrPo3EL81F_TShDPIjJY6WrbFB6kkr0eU3B_PEQL_R5Vo7NU4z5bzY6r4iQupBrkSW2vMQcevM3-u79R5htw0UqRFZPNyD0uVTLhbmIJmMC0LpAwkz5dC8L1KkFGne4xD5JdQroYDzBn430XGaOPEGM9H4bYmpp33LLHF5j1yF9-R71ap1to-hcKmIaIsVZd0hbSST1jblgbkpYypbEKMC6dbi0K9rvMeeZU'
+    img: 'https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
@@ -53,21 +53,21 @@ const ARTISANS = [
     name: 'Marcus Chen',
     title: 'Senior Creative Director',
     availability: 'Today',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuChP_nPvgXG2NWZZ18fzqhhgkDa93X19qrStpMNHFcHrPo3EL81F_TShDPIjJY6WrbFB6kkr0eU3B_PEQL_R5Vo7NU4z5bzY6r4iQupBrkSW2vMQcevM3-u79R5htw0UqRFZPNyD0uVTLhbmIJmMC0LpAwkz5dC8L1KkFGne4xD5JdQroYDzBn430XGaOPEGM9H4bYmpp33LLHF5j1yF9-R71ap1to-hcKmIaIsVZd0hbSST1jblgbkpYypbEKMC6dbi0K9rvMeeZU'
+    img: 'https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&q=80&w=400'
   },
   {
     id: 'elena-moretti',
     name: 'Elena Moretti',
     title: 'Master Colorist',
     availability: 'Tomorrow',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCMUvrBIUtCbrqhrL1582apAkp-pUWig94bwGEhmPvRxRVvq3F62-f_sJTaeO5HKBOxtWl2zgBOsLE92abo3lfliOuVPg7ffAXJI4C1O4Rq9XknTySJ_jKTH-GBoBPlKqifgbuB49BMeKqxF8LowBlKwv3YsmAW7iEFJOeLpCibyvLuikrqKytumZT8MqpGbiEcbxPANaDm-wzYwry5s9b6plF__QEHu3x-3YIj2zEtrPaQggkSO4l8eX4WR9Pe3Bq3z02_pzmj6yA'
+    img: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=400'
   },
   {
     id: 'julian-thorne',
     name: 'Julian Thorne',
     title: 'Precision Specialist',
     availability: 'Friday',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBnwQs83ZDK6f6SaRhTbVXxK9Ug6YpkQo8eGcCD_tJxJjudFUNzLl2yVeBrNuf0U1FZHIkNqgnp6v0WpUYb75oEcZJIrfIXuAdYsG-CuIfVmEhSr8LZnyUMti8LYf85SHYSn29eQLl3iCONDg0DFLJ2eW3yMWWjNvEs4X5isxsAXHDESwYV4ixdb18h3UGofApMso4EKorWn7freOFe1gzIojpe0hqEAUpwXKev4Vt8R9SJwxk6le7jdiRvaLbf9QyqgCJtcOf3KRc'
+    img: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=400'
   }
 ];
 

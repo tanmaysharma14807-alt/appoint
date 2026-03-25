@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "clientName": "Elena Rodriguez",
+    "phone": "+1 (555) 012-9844",
+    "services": [
+      "Signature Cut"
+    ],
+    "stylist": "Marcus Chen",
+    "stylistImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuChP_nPvgXG2NWZZ18fzqhhgkDa93X19qrStpMNHFcHrPo3EL81F_TShDPIjJY6WrbFB6kkr0eU3B_PEQL_R5Vo7NU4z5bzY6r4iQupBrkSW2vMQcevM3-u79R5htw0UqRFZPNyD0uVTLhbmIJmMC0LpAwkz5dC8L1KkFGne4xD5JdQroYDzBn430XGaOPEGM9H4bYmpp33LLHF5j1yF9-R71ap1to-hcKmIaIsVZd0hbSST1jblgbkpYypbEKMC6dbi0K9rvMeeZU",
+    "time": "10:30 AM",
+    "date": "2024-10-24",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "clientName": "Jameson Blake",
+    "phone": "+1 (555) 334-7712",
+    "services": [
+      "Hair Color"
+    ],
+    "stylist": "Elena Moretti",
+    "stylistImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMUvrBIUtCbrqhrL1582apAkp-pUWig94bwGEhmPvRxRVvq3F62-f_sJTaeO5HKBOxtWl2zgBOsLE92abo3lfliOuVPg7ffAXJI4C1O4Rq9XknTySJ_jKTH-GBoBPlKqifgbuB49BMeKqxF8LowBlKwv3YsmAW7iEFJOeLpCibyvLuikrqKytumZT8MqpGbiEcbxPANaDm-wzYwry5s9b6plF__QEHu3x-3YIj2zEtrPaQggkSO4l8eX4WR9Pe3Bq3z02_pzmj6yA",
+    "time": "11:45 AM",
+    "date": "2024-10-24",
+    "status": "active"
+  }
+]

@@ -1,19 +1,15 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { prisma } from '@/lib/prisma';
 
-const dataFilePath = path.join(process.cwd(), 'data/bookings.json');
-
-// Read bookings
+// Read all bookings
 export async function GET() {
   try {
-    if (!fs.existsSync(dataFilePath)) {
-      return NextResponse.json([]);
-    }
-    const fileContents = fs.readFileSync(dataFilePath, 'utf8');
-    const bookings = JSON.parse(fileContents);
+    const bookings = await prisma.booking.findMany({
+      orderBy: { date: 'asc' },
+    });
     return NextResponse.json(bookings);
   } catch (error) {
+    console.error('Failed to fetch bookings:', error);
     return NextResponse.json({ error: 'Failed to read bookings' }, { status: 500 });
   }
 }
@@ -23,58 +19,64 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     
-    // Read current
-    let bookings = [];
-    if (fs.existsSync(dataFilePath)) {
-      const fileContents = fs.readFileSync(dataFilePath, 'utf8');
-      bookings = JSON.parse(fileContents);
-    }
-    
-    // Add new
-    const newBooking = {
-      id: Date.now(),
-      ...body,
-      status: 'active'
-    };
-    
-    bookings.push(newBooking);
-    
-    // Write back
-    fs.writeFileSync(dataFilePath, JSON.stringify(bookings, null, 2), 'utf8');
+    const newBooking = await prisma.booking.create({
+      data: {
+        clientName: body.clientName,
+        phone: body.phone,
+        services: body.services || [],
+        stylist: body.stylist,
+        stylistImg: body.stylistImg || null,
+        time: body.time,
+        date: body.date,
+        status: 'active',
+      },
+    });
     
     return NextResponse.json(newBooking, { status: 201 });
   } catch (error) {
-    console.error(error);
+    console.error('Failed to create booking:', error);
     return NextResponse.json({ error: 'Failed to save booking' }, { status: 500 });
   }
 }
 
+// Update booking
 export async function PATCH(request: Request) {
   try {
     const body = await request.json();
-    let bookings = [];
-    if (fs.existsSync(dataFilePath)) {
-      bookings = JSON.parse(fs.readFileSync(dataFilePath, 'utf8'));
-    }
-    bookings = bookings.map((b: any) => b.id === body.id ? { ...b, ...body } : b);
-    fs.writeFileSync(dataFilePath, JSON.stringify(bookings, null, 2), 'utf8');
-    return NextResponse.json({ success: true });
+    
+    const updatedBooking = await prisma.booking.update({
+      where: { id: Number(body.id) },
+      data: {
+        clientName: body.clientName,
+        phone: body.phone,
+        services: body.services,
+        stylist: body.stylist,
+        stylistImg: body.stylistImg,
+        time: body.time,
+        date: body.date,
+        status: body.status,
+      },
+    });
+
+    return NextResponse.json({ success: true, booking: updatedBooking });
   } catch (error) {
+    console.error('Failed to update booking:', error);
     return NextResponse.json({ error: 'Failed to update booking' }, { status: 500 });
   }
 }
 
+// Delete booking
 export async function DELETE(request: Request) {
   try {
     const { id } = await request.json();
-    let bookings = [];
-    if (fs.existsSync(dataFilePath)) {
-      bookings = JSON.parse(fs.readFileSync(dataFilePath, 'utf8'));
-    }
-    bookings = bookings.filter((b: any) => b.id !== id);
-    fs.writeFileSync(dataFilePath, JSON.stringify(bookings, null, 2), 'utf8');
+    
+    await prisma.booking.delete({
+      where: { id: Number(id) },
+    });
+
     return NextResponse.json({ success: true });
   } catch (error) {
+    console.error('Failed to delete booking:', error);
     return NextResponse.json({ error: 'Failed to delete booking' }, { status: 500 });
   }
 }

@@ -105,8 +105,16 @@ export default function BookingFlow() {
   const totalPrice = selectedServices.reduce((acc, curr) => acc + curr.price, 0);
 
   const handleConfirmBooking = async () => {
-    if (selectedServices.length === 0 || !selectedArtisan || !selectedDate || !selectedTime || !clientName || !phone) {
-      alert("Please complete all steps (Services, Artisan, Date, Time, and Personal Details) before booking!");
+    const missing = [];
+    if (selectedServices.length === 0) missing.push('Services');
+    if (!selectedArtisan) missing.push('Artisan/Stylist');
+    if (!selectedDate) missing.push('Date');
+    if (!selectedTime) missing.push('Time');
+    if (!clientName.trim()) missing.push('Full Name');
+    if (!phone.trim()) missing.push('Phone Number');
+
+    if (missing.length > 0) {
+      alert(`Please complete the following steps before booking:\n- ${missing.join('\n- ')}`);
       return;
     }
 
@@ -151,7 +159,7 @@ export default function BookingFlow() {
   return (
     <>
       <NavBar />
-      <main className="pt-24 pb-12 px-4 md:px-8 max-w-5xl mx-auto">
+      <main className="pt-24 pb-40 px-4 md:px-8 max-w-5xl mx-auto">
         {/* Booking Flow Header */}
         <header className="mb-12 text-center">
           <span className="text-xs uppercase tracking-widest font-bold text-primary mb-2 block">Step 1 of 5</span>

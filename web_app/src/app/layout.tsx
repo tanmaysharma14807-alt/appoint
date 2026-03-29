@@ -13,7 +13,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Tanmay's Salon | Premium Salon Experience",
+  title: "Hair Masters | Premium Salon Experience",
   description: "A curated sanctuary where high-fashion editorial aesthetics meet the organic calm of a luxury spa experience.",
 };
 

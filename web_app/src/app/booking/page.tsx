@@ -8,42 +8,42 @@ const SERVICES = [
   {
     id: 'haircut',
     name: 'Haircut',
-    price: 95,
+    price: 400,
     duration: '60 Minutes',
     desc: 'Structural precision meets fluid movement. Includes luxury wash and style.',
-    img: 'https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&q=80&w=800'
+    img: '/signaturecut.png'
   },
   {
     id: 'hair-color',
     name: 'Hair Color',
-    price: 180,
+    price: 3000,
     duration: '120 Minutes',
     desc: 'Bespoke coloring service tailored to your skin tone and hair texture.',
-    img: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=800'
+    img: '/hair2.png'
   },
   {
     id: 'beard-trim',
     name: 'Beard Trim',
-    price: 45,
+    price: 200,
     duration: '30 Minutes',
     desc: 'Precision grooming and hot towel treatment for a refined look.',
-    img: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=800'
+    img: '/beard.jpg'
   },
   {
     id: 'straightening',
     name: 'Straightening',
-    price: 250,
+    price: 1500,
     duration: '180 Minutes',
     desc: 'Long-lasting silkiness and frizz control with premium keratin treatment.',
-    img: 'https://images.unsplash.com/photo-1521590832167-7bfc17474920?auto=format&fit=crop&q=80&w=800'
+    img: '/straight.png'
   },
   {
     id: 'perm',
     name: 'Perm',
-    price: 150,
+    price: 2500,
     duration: '150 Minutes',
     desc: 'Modern texture and volume tailored to your desired curl pattern.',
-    img: 'https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=800'
+    img: '/perm.png'
   }
 ];
 
@@ -111,7 +111,7 @@ export default function BookingFlow() {
     if (!selectedDate) missing.push('Date');
     if (!selectedTime) missing.push('Time');
     if (!clientName.trim()) missing.push('Full Name');
-    if (!phone.trim()) missing.push('Phone Number');
+    if (!phone.trim() || phone.trim().length !== 10) missing.push('Valid 10-digit Phone Number');
 
     if (missing.length > 0) {
       alert(`Please complete the following steps before booking:\n- ${missing.join('\n- ')}`);
@@ -162,7 +162,7 @@ export default function BookingFlow() {
       <main className="pt-24 pb-40 px-4 md:px-8 max-w-5xl mx-auto">
         {/* Booking Flow Header */}
         <header className="mb-12 text-center">
-          <span className="text-xs uppercase tracking-widest font-bold text-primary mb-2 block">Step 1 of 5</span>
+          <span className="text-xs uppercase tracking-widest font-bold text-primary mb-2 block">Step 1 of 4</span>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-on-surface mb-4">Select Services</h1>
           <p className="text-on-surface-variant max-w-md mx-auto">Curation is at the heart of our craft. Choose the experiences that speak to you. You may select multiple.</p>
         </header>
@@ -189,7 +189,7 @@ export default function BookingFlow() {
                   <div className="p-6 flex-grow flex flex-col">
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="text-xl font-bold">{service.name}</h3>
-                      <span className="text-primary font-bold">${service.price}+</span>
+                      <span className="text-primary font-bold">₹{service.price}+</span>
                     </div>
                     <p className="text-on-surface-variant text-sm mb-4 line-clamp-2">{service.desc}</p>
                     <div className="mt-auto flex items-center gap-2 text-primary">
@@ -207,7 +207,7 @@ export default function BookingFlow() {
         <section className="mb-20">
           <header className="mb-8 flex justify-between items-end">
             <div>
-              <span className="text-xs uppercase tracking-widest font-bold text-primary mb-2 block">Step 2 of 5</span>
+              <span className="text-xs uppercase tracking-widest font-bold text-primary mb-2 block">Step 2 of 4</span>
               <h2 className="text-3xl font-bold tracking-tight">Choose Your Artisan</h2>
             </div>
             <a className="text-primary text-sm font-bold border-b border-primary/20 pb-1" href="#">View All Stylists</a>
@@ -218,10 +218,10 @@ export default function BookingFlow() {
               const hasSelection = selectedArtisan !== null;
 
               const imgClass = `w-full h-full object-cover transition-all duration-700 ${isSelected
-                  ? 'grayscale-0'
-                  : hasSelection
-                    ? 'grayscale opacity-60'
-                    : 'grayscale group-hover:grayscale-0'
+                ? 'grayscale-0'
+                : hasSelection
+                  ? 'grayscale opacity-60'
+                  : 'grayscale group-hover:grayscale-0'
                 }`;
 
               const containerClass = `flex-shrink-0 w-64 snap-start group cursor-pointer transition-transform duration-300 ${isSelected ? 'scale-105' : hasSelection ? 'scale-95 opacity-80 hover:opacity-100' : ''
@@ -250,7 +250,7 @@ export default function BookingFlow() {
         {/* Step 3: Date & Time Picker */}
         <section className="mb-20">
           <header className="mb-8">
-            <span className="text-xs uppercase tracking-widest font-bold text-primary mb-2 block">Step 3 of 5</span>
+            <span className="text-xs uppercase tracking-widest font-bold text-primary mb-2 block">Step 3 of 4</span>
             <h2 className="text-3xl font-bold tracking-tight">Select Availability</h2>
           </header>
           <div className="bg-surface-container-low rounded-lg p-8">
@@ -262,8 +262,8 @@ export default function BookingFlow() {
                     key={d.id}
                     onClick={() => setSelectedDate(d.id)}
                     className={`flex-shrink-0 w-20 h-28 rounded-full flex flex-col items-center justify-center cursor-pointer transition-colors ${isSelected
-                        ? 'bg-primary text-on-primary shadow-lg shadow-primary/20'
-                        : 'bg-surface-container-lowest hover:bg-surface-variant text-on-surface'
+                      ? 'bg-primary text-on-primary shadow-lg shadow-primary/20'
+                      : 'bg-surface-container-lowest hover:bg-surface-variant text-on-surface'
                       }`}
                   >
                     <span className={`text-xs uppercase tracking-widest font-bold ${isSelected ? 'opacity-80' : 'text-on-surface-variant'}`}>{d.month}</span>
@@ -281,8 +281,8 @@ export default function BookingFlow() {
                     key={time}
                     onClick={() => setSelectedTime(time)}
                     className={`py-4 px-6 rounded-full text-sm font-bold border-2 transition-all ${isSelected
-                        ? 'bg-surface-container-lowest border-primary text-primary shadow-sm shadow-primary/10'
-                        : 'bg-surface-container-lowest border-transparent hover:border-primary/50 text-on-surface'
+                      ? 'bg-surface-container-lowest border-primary text-primary shadow-sm shadow-primary/10'
+                      : 'bg-surface-container-lowest border-transparent hover:border-primary/50 text-on-surface'
                       }`}
                   >
                     {time}
@@ -296,7 +296,7 @@ export default function BookingFlow() {
         {/* Step 4: Contact Info */}
         <section className="mb-20">
           <header className="mb-8">
-            <span className="text-xs uppercase tracking-widest font-bold text-primary mb-2 block">Step 4 of 5</span>
+            <span className="text-xs uppercase tracking-widest font-bold text-primary mb-2 block">Step 4 of 4</span>
             <h2 className="text-3xl font-bold tracking-tight">Personal Details</h2>
           </header>
           <div className="space-y-12 max-w-xl">
@@ -306,7 +306,7 @@ export default function BookingFlow() {
                 placeholder=" "
                 type="text"
                 value={clientName}
-                onChange={(e) => setClientName(e.target.value)}
+                onChange={(e) => setClientName(e.target.value.replace(/[0-9]/g, ''))}
               />
               <label className="absolute left-0 -top-3.5 text-xs font-bold uppercase tracking-widest text-primary transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-on-surface-variant peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-primary pointer-events-none">Full Name</label>
             </div>
@@ -315,8 +315,9 @@ export default function BookingFlow() {
                 className="peer w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-all placeholder-transparent"
                 placeholder=" "
                 type="tel"
+                maxLength={10}
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => setPhone(e.target.value.replace(/[^0-9]/g, ''))}
               />
               <label className="absolute left-0 -top-3.5 text-xs font-bold uppercase tracking-widest text-primary transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-on-surface-variant peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-primary pointer-events-none">Phone Number</label>
             </div>

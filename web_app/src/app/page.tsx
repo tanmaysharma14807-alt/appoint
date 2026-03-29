@@ -11,7 +11,7 @@ export default function Home() {
         <section className="relative min-h-screen flex items-center pt-20 px-8 overflow-hidden">
           <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
             <div className="z-10">
-              <span className="label-md uppercase tracking-[0.2em] text-primary font-bold mb-4 block">The Modern Atelier</span>
+              <span className="label-md uppercase tracking-[0.2em] text-primary font-bold mb-4 block">Hair Masters</span>
               <h1 className="text-7xl md:text-8xl font-headline mb-6 leading-[1.1]">Elevate Your <span className="italic">Inner Glow</span></h1>
               <p className="text-lg text-on-surface-variant max-w-md mb-10 font-body leading-relaxed">
                 A curated sanctuary where high-fashion editorial aesthetics meet the organic calm of a luxury spa experience.
@@ -21,18 +21,14 @@ export default function Home() {
                   Book Now
                 </Link>
                 <a className="group flex items-center gap-2 text-on-surface font-bold" href="#services">
-                  View Services 
+                  View Services
                   <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </a>
               </div>
             </div>
             <div className="relative">
               <div className="relative z-10 rounded-lg overflow-hidden h-[600px] w-full shadow-2xl">
-                <img alt="Luxury Salon Interior" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1200"/>
-              </div>
-              <div className="absolute -bottom-12 -left-12 bg-primary-container p-8 rounded-lg max-w-xs shadow-xl hidden md:block">
-                <p className="font-headline text-on-primary-container italic text-xl mb-2">&quot;A transformation beyond the chair.&quot;</p>
-                <p className="text-on-primary-container/80 text-sm">— Vogue Editorial 2024</p>
+                <img alt="Luxury Salon Interior" className="w-full h-full object-cover" src="/main.png" />
               </div>
             </div>
           </div>
@@ -52,9 +48,9 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
               <div className="group">
                 <div className="h-[400px] rounded-lg overflow-hidden mb-8 relative">
-                  <img alt="Signature Cut" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&q=80&w=800"/>
+                  <img alt="Signature Cut" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/signaturecut.png" />
                   <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur px-6 py-2 rounded-full shadow-sm">
-                    <span className="font-bold text-primary">$85+</span>
+                    <span className="font-bold text-primary">₹400+</span>
                   </div>
                 </div>
                 <h3 className="text-2xl font-headline mb-2">Signature Cut</h3>
@@ -63,9 +59,9 @@ export default function Home() {
 
               <div className="group">
                 <div className="h-[400px] rounded-lg overflow-hidden mb-8 relative">
-                  <img alt="Color &amp; Gloss" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=800"/>
+                  <img alt="Color &amp; Gloss" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/hair2.png" />
                   <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur px-6 py-2 rounded-full shadow-sm">
-                    <span className="font-bold text-primary">$150+</span>
+                    <span className="font-bold text-primary">₹3000+</span>
                   </div>
                 </div>
                 <h3 className="text-2xl font-headline mb-2">Color &amp; Gloss</h3>
@@ -74,12 +70,12 @@ export default function Home() {
 
               <div className="group">
                 <div className="h-[400px] rounded-lg overflow-hidden mb-8 relative">
-                  <img alt="Atelier Ritual" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=800"/>
+                  <img alt="Atelier Ritual" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/ritual.png" />
                   <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur px-6 py-2 rounded-full shadow-sm">
-                    <span className="font-bold text-primary">$120+</span>
+                    <span className="font-bold text-primary">₹1000+</span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-headline mb-2">Atelier Ritual</h3>
+                <h3 className="text-2xl font-headline mb-2">Masters Ritual</h3>
                 <p className="text-on-surface-variant leading-relaxed">Deep restorative treatment using rare botanical extracts and extended pressure-point massage.</p>
               </div>
             </div>
@@ -95,11 +91,11 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-12 gap-6 h-[800px]">
               <div className="col-span-12 md:col-span-7 h-full rounded-lg overflow-hidden">
-                <img alt="Salon Main Hall" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1516975080661-46452243defd?auto=format&fit=crop&q=80&w=1200"/>
+                <img alt="Salon Main Hall" className="w-full h-full object-cover" src="/inside1.png" />
               </div>
               <div className="col-span-12 md:col-span-5 grid grid-rows-2 gap-6">
                 <div className="rounded-lg overflow-hidden">
-                  <img alt="Atelier Details" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800"/>
+                  <img alt="Atelier Details" className="w-full h-full object-cover" src="/inside2.png" />
                 </div>
                 <div className="rounded-lg overflow-hidden bg-primary-container flex items-center justify-center p-12 text-center">
                   <div>
@@ -121,21 +117,22 @@ export default function Home() {
                 <h2 className="text-5xl font-headline mb-8">Refined Experiences</h2>
                 <div className="space-y-12">
                   <blockquote className="border-l-4 border-primary pl-8">
-                    <p className="text-2xl font-headline italic mb-4 leading-relaxed">&quot;The most sophisticated salon experience I&apos;ve had globally. Tanmay&apos;s Salon doesn&apos;t just cut hair; they curate your entire presence.&quot;</p>
-                    <footer className="font-body font-bold text-on-surface">— Julianne M., Creative Director</footer>
+                    <p className="text-2xl font-headline italic mb-4 leading-relaxed">Thanks to Asha Mam (MUA) and Wajid sir (Hair Artist) for my Makeover. I got exact look that I had in my mind for my brothers wedding. Both are highly skilled and professional and more importantly nice human beings. It was a lovely time spent Thank you once again.
+                    </p>
+                    <footer className="font-body font-bold text-on-surface">— Harleen Kaur, Local Guide</footer>
                   </blockquote>
                   <blockquote className="border-l-4 border-primary/30 pl-8">
-                    <p className="text-2xl font-headline italic mb-4 leading-relaxed">&quot;A masterclass in luxury. The attention to detail from the moment you walk in is unparalleled.&quot;</p>
-                    <footer className="font-body font-bold text-on-surface">— David R., Architect</footer>
+                    <p className="text-2xl font-headline italic mb-4 leading-relaxed">This is my first time visiting Chandigarh, I came for a friends wedding to do my hair and makeup and OMG I loved the services. Kevin did my makeup and he was amazing! He Knew exactly what works for my features and eye shape. I didn’t tell him to change anything in the makeup, he knew exactly what to do, professional and nice and fast. Highly highly recommend him if u come here. 10/10</p>
+                    <footer className="font-body font-bold text-on-surface">— mays atiyeh</footer>
                   </blockquote>
                 </div>
               </div>
               <div className="relative">
                 <div className="aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
-                  <img alt="Satisfied Client" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=800"/>
+                  <img alt="Satisfied Client" className="w-full h-full object-cover" src="/nails.png" />
                 </div>
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-surface-container-highest rounded-full flex items-center justify-center p-6 text-center border border-primary/20">
-                  <span className="text-primary font-serif italic text-sm">Est. 2024 NYC</span>
+                  <span className="text-primary font-serif italic text-sm">Est. 2014 DL</span>
                 </div>
               </div>
             </div>
@@ -144,30 +141,30 @@ export default function Home() {
 
         {/* Map & CTA Section */}
         <section className="py-32 px-8 bg-surface">
-          <div className="max-w-7xl mx-auto rounded-lg overflow-hidden bg-on-surface text-surface flex flex-col md:flex-row">
+          <div className="max-w-7xl mx-auto rounded-lg overflow-hidden bg-white text-on-surface shadow-2xl flex flex-col md:flex-row border border-outline-variant/30">
             <div className="p-16 md:w-1/2">
-              <h2 className="text-5xl font-headline mb-6">Visit the Atelier</h2>
-              <p className="text-surface/70 mb-12 font-body max-w-sm">Located in the heart of the design district, our flagship salon awaits your arrival.</p>
+              <h2 className="text-5xl font-headline mb-6">Visit the Masters</h2>
+              <p className="text-on-surface-variant mb-12 font-body max-w-sm">Located in the heart of the design district, our flagship salon awaits your arrival.</p>
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
-                  <span className="material-symbols-outlined text-primary-container">location_on</span>
+                  <span className="material-symbols-outlined text-primary">location_on</span>
                   <div>
-                    <p className="font-bold">722 Madison Avenue</p>
-                    <p className="text-surface/60">New York, NY 10065</p>
+                    <p className="font-bold">Sector 9C, Madhya Marg</p>
+                    <p className="text-on-surface-variant text-sm">Chandigarh, 160009</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="material-symbols-outlined text-primary-container">schedule</span>
+                  <span className="material-symbols-outlined text-primary">schedule</span>
                   <div>
-                    <p className="font-bold">Mon - Sat: 9am - 8pm</p>
-                    <p className="text-surface/60">Sunday: Closed</p>
+                    <p className="font-bold">Mon - Sun: 10am - 9pm</p>
+                    <p className="text-on-surface-variant text-sm"></p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="material-symbols-outlined text-primary-container">call</span>
+                  <span className="material-symbols-outlined text-primary">call</span>
                   <div>
-                    <p className="font-bold">+1 (212) 555-0198</p>
-                    <p className="text-surface/60">concierge@aurareserve.com</p>
+                    <p className="font-bold">+91 1234567899</p>
+                    <p className="text-on-surface-variant text-sm">ourmail@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -175,9 +172,9 @@ export default function Home() {
                 Get Directions
               </a>
             </div>
-            <div className="md:w-1/2 min-h-[400px] relative grayscale">
-              <img alt="Location Map" className="w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1200"/>
-              <div className="absolute inset-0 bg-gradient-to-r from-on-surface to-transparent md:block hidden"></div>
+            <div>
+              <img alt="Location Map" className="w-full h-full object-cover opacity-80" src="/mapviewwhite.png" />
+              <div className="absolute inset-0 bg-gradient-to-r from-white to-transparent md:block hidden"></div>
             </div>
           </div>
         </section>

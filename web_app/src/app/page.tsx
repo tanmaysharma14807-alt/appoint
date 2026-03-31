@@ -11,7 +11,7 @@ export default function Home() {
         <section className="relative min-h-screen flex items-center pt-20 px-8 overflow-hidden">
           <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
             <div className="z-10">
-              <span className="label-md uppercase tracking-[0.2em] text-primary font-bold mb-4 block">Hair Masters</span>
+              <span className="label-md uppercase tracking-[0.2em] text-primary font-bold mb-4 block">HEADLINE SALON</span>
               <h1 className="text-7xl md:text-8xl font-headline mb-6 leading-[1.1]">Elevate Your <span className="italic">Inner Glow</span></h1>
               <p className="text-lg text-on-surface-variant max-w-md mb-10 font-body leading-relaxed">
                 A curated sanctuary where high-fashion editorial aesthetics meet the organic calm of a luxury spa experience.
@@ -117,13 +117,15 @@ export default function Home() {
                 <h2 className="text-5xl font-headline mb-8">Refined Experiences</h2>
                 <div className="space-y-12">
                   <blockquote className="border-l-4 border-primary pl-8">
-                    <p className="text-2xl font-headline italic mb-4 leading-relaxed">Thanks to Asha Mam (MUA) and Wajid sir (Hair Artist) for my Makeover. I got exact look that I had in my mind for my brothers wedding. Both are highly skilled and professional and more importantly nice human beings. It was a lovely time spent Thank you once again.
+                    <p className="text-2xl font-headline italic mb-4 leading-relaxed">Had a great experience here. The staff listened properly and suggested what would suit me best. Loved the haircut and overall service. Very neat and well-maintained salon. Definitely recommended 👌 …
                     </p>
-                    <footer className="font-body font-bold text-on-surface">— Harleen Kaur, Local Guide</footer>
+                    <footer className="font-body font-bold text-on-surface">— Venom</footer>
                   </blockquote>
                   <blockquote className="border-l-4 border-primary/30 pl-8">
-                    <p className="text-2xl font-headline italic mb-4 leading-relaxed">This is my first time visiting Chandigarh, I came for a friends wedding to do my hair and makeup and OMG I loved the services. Kevin did my makeup and he was amazing! He Knew exactly what works for my features and eye shape. I didn’t tell him to change anything in the makeup, he knew exactly what to do, professional and nice and fast. Highly highly recommend him if u come here. 10/10</p>
-                    <footer className="font-body font-bold text-on-surface">— mays atiyeh</footer>
+                    <p className="text-2xl font-headline italic mb-4 leading-relaxed">I recently got my haircut from Harry, and the experience was really great. The salon has good facilities, everything is clean and well-managed. Harry is extremely skilled and listens carefully to what you want. He’s very cooperative, friendly, and makes you feel comfortable throughout the process.
+
+                      The staff treats you well, and the overall service feels professional and smooth. Definitely a place I would recommend for anyone looking for a good haircut and pleasant experience.</p>
+                    <footer className="font-body font-bold text-on-surface">— Khushnoordeep Singh</footer>
                   </blockquote>
                 </div>
               </div>
@@ -132,7 +134,7 @@ export default function Home() {
                   <img alt="Satisfied Client" className="w-full h-full object-cover" src="/nails.png" />
                 </div>
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-surface-container-highest rounded-full flex items-center justify-center p-6 text-center border border-primary/20">
-                  <span className="text-primary font-serif italic text-sm">Est. 2014 DL</span>
+                  <span className="text-primary font-serif italic text-sm"></span>
                 </div>
               </div>
             </div>
@@ -143,32 +145,32 @@ export default function Home() {
         <section className="py-32 px-8 bg-surface">
           <div className="max-w-7xl mx-auto rounded-lg overflow-hidden bg-white text-on-surface shadow-2xl flex flex-col md:flex-row border border-outline-variant/30">
             <div className="p-16 md:w-1/2">
-              <h2 className="text-5xl font-headline mb-6">Visit the Masters</h2>
+              <h2 className="text-5xl font-headline mb-6">Visit Headline Salon</h2>
               <p className="text-on-surface-variant mb-12 font-body max-w-sm">Located in the heart of the design district, our flagship salon awaits your arrival.</p>
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <span className="material-symbols-outlined text-primary">location_on</span>
                   <div>
-                    <p className="font-bold">Sector 9C, Madhya Marg</p>
-                    <p className="text-on-surface-variant text-sm">Chandigarh, 160009</p>
+                    <p className="font-bold">Booth No. 69, Sector 44C</p>
+                    <p className="text-on-surface-variant text-sm">Chandigarh, 160043</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <span className="material-symbols-outlined text-primary">schedule</span>
                   <div>
-                    <p className="font-bold">Mon - Sun: 10am - 9pm</p>
+                    <p className="font-bold">Mon - Sun: 9:30am - 8:30pm</p>
                     <p className="text-on-surface-variant text-sm"></p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <span className="material-symbols-outlined text-primary">call</span>
                   <div>
-                    <p className="font-bold">+91 1234567899</p>
+                    <p className="font-bold">+91 9779139750</p>
                     <p className="text-on-surface-variant text-sm">ourmail@gmail.com</p>
                   </div>
                 </div>
               </div>
-              <a href="https://maps.app.goo.gl/vT8jjqhbkCKCMq8a8" target="_blank" rel="noopener noreferrer" className="mt-16 bg-primary text-on-primary px-10 py-5 rounded-full font-bold hover:bg-primary-container transition-colors w-full md:w-auto inline-block text-center">
+              <a href="https://maps.app.goo.gl/SbiZ3QSazBiyJ9ve9  " target="_blank" rel="noopener noreferrer" className="mt-16 bg-primary text-on-primary px-10 py-5 rounded-full font-bold hover:bg-primary-container transition-colors w-full md:w-auto inline-block text-center">
                 Get Directions
               </a>
             </div>

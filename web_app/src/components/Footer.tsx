@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-surface border-t border-outline-variant/15">
       <div className="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-1">
-          <span className="text-2xl font-headline italic text-on-surface block mb-6">Hair Masters</span>
+          <span className="text-2xl font-headline italic text-on-surface block mb-6">HEADLINE SALON</span>
           <p className="text-on-surface-variant text-sm leading-relaxed">A sanctuary for high-fashion aesthetics and precision craft. Experience the art of refinement.</p>
         </div>
         <div>
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-8 py-8 border-t border-outline-variant/10 text-center flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-xs uppercase tracking-widest text-on-surface-variant font-medium">© 2014 Hair Masters. All rights reserved.</p>
+        <p className="text-xs uppercase tracking-widest text-on-surface-variant font-medium">© 2014 HEADLINE SALON. All rights reserved.</p>
         <div className="flex gap-8">
           <Link className="text-xs uppercase tracking-widest text-on-surface-variant font-medium hover:text-primary" href="#">Privacy Policy</Link>
           <Link className="text-xs uppercase tracking-widest text-on-surface-variant font-medium hover:text-primary" href="#">Terms of Service</Link>
